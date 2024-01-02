@@ -1,0 +1,317 @@
+/* Common styles */
+
+.citrus_instinct .section-title {
+  display: block;
+  text-align: center;
+  padding: 50px 15px;
+}
+
+.citrus_instinct .section-title h2 {
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  font-size: 25px;
+  font-weight: 700;
+  color: #000000;
+  padding: 0 0 25px;
+  margin: 0;
+}
+
+.citrus_instinct .section-title p {
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+}
+
+.citrus_instinctTabId {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.citrus_instinct__tab-area {
+  overflow: hidden;
+  max-width: 1253px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.citrus_instinct__tab-section-title{
+  text-align: center;
+}
+.citrus_instinct__tab-section-title h2{
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+  padding: 0 25px;
+  margin-top: 30px;
+}
+.citrus_instinct__tab-section-title p{
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+  padding: 10px;
+  margin: 0;
+}
+.citrus_instinct__tab-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.splide__pagination {
+  display: none;
+}
+
+.citrus_instinct__Product {
+  display: none;
+}
+
+.citrus_instinct__Product img {
+  object-fit: contain;
+}
+
+.citrus_instinct-tab-card a {
+  text-align: left;
+}
+
+.citrus_instinct-tab-cardImg img {
+  max-width: 100%;
+  max-height: 175px;
+}
+
+.citrus_instinct-tab-card > a {
+  text-decoration: none;
+  color: #000;
+}
+
+.citrus_instinct-tab-card p {
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  color: #333333;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 20px 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 4em;
+  display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.citrus_instinct__Product .citrus_instinct-tab-cardBody h4 {
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  font-size: 20px;
+  margin: 0;
+  padding: 30px 0 10px;
+  min-height: 40px;
+}
+
+.citrus_instinct__productCTA {
+  border: 0;
+  padding: 5px 0 0;
+  background: none;
+  text-decoration: underline;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  color: #001952;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.groupCtaDimention {
+  display: flex;
+  flex-direction: column;
+  font-weight: 900;
+}
+
+.groupCtaDimention p {
+  line-height: 18px;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  color: #001952;
+  margin-top: 0;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.citrus_instinct_groupProductCTA {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  gap: 20px;
+  margin: auto;
+}
+
+.groupCtaArrow p {
+  font-size: 36px !important;
+  margin-top: 0;
+}
+
+.citrus_instinct__Products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.citrus_instinct-tab-cardImg {
+  padding: 0 10px;
+  margin: auto;
+  margin: 0 auto 10px;
+}
+
+.citrusTabShow {
+  display: block;
+}
+
+.citrus_instinct__groupProductShot__item a{
+  padding: 20px 0 0;
+}
+
+.citrus_instinct__groupProductShot {
+  border: 1px solid #001952;
+  border-radius: 10px;
+  text-decoration: none;
+  max-height: 300px;
+}
+
+.citrus_instinct__groupProductShot__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.citrus_instinct__groupProductShotImage img {
+  max-height: 144px;
+  padding: 20px 0;
+}
+
+.citrus_instinct_groupProductCTA {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  gap: 20px;
+  margin: auto;
+  padding: 0;
+}
+
+.groupCtaDimention {
+  display: flex;
+  flex-direction: column;
+  font-weight: 900;
+}
+
+.groupCtaDimention p {
+  line-height: 18px;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  color: #001952;
+  margin-top: 0;
+  text-decoration: underline;
+  text-align: left;
+}
+
+.groupCtaArrow p {
+  font-size: 34px;
+  margin-top: 0;
+}
+
+.citrus_instinct__tab_item {
+  text-transform: uppercase;
+  padding: 12px 20px;
+  margin: 0px 10px;
+  font-size: 14px;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 10px solid transparent;
+  cursor: pointer;
+  color: #9b9b9b;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.citrus_instinct__tab_type_item {
+  margin: 0px 5px;
+  width: 200px;
+  height: 35px;
+  border: none;
+  border-radius: 20px;
+  font-size: 13.5px;
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  font-style: normal;
+  cursor: pointer;
+  fill: #F0F0F0;
+  line-height: normal;
+  font-weight: 450;
+  color: #00205B;
+}
+
+.citrus_instinct__tab_item img {
+  max-width: 50px;
+  margin: 0 auto;
+}
+
+.citrus_instinct__tab_item.citrus_instinct__active_tab {
+  color: #001952;
+  border-bottom: 10px solid #001952;
+  border-radius: 0;
+}
+
+.citrus_instinct__tab_type_item.citrus_instinct__active_tab_type {
+  color: white;
+  background: #001952;
+  font-weight: 700;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+}
+
+.citrus_instinctTabId {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #021b4e;
+}
+
+.citrus_instinctTabTypeId {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 30px;
+  /* border-bottom: 1px solid #021b4e; */
+}
+/* custom css */
+.splide__arrow:disabled {
+  opacity: 0;
+}
