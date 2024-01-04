@@ -3,7 +3,7 @@
      --------------------------*/
     // tab Carousel js
     // initialize product scroller
-    advanceArrows("citrus_instinct_scroller1_tab1");
+    advanceArrows("citrusAdSEBPO_scroller1_tab1");
     function advanceArrows(idx) {
         var splideElement = "#" + idx;
         var splideDefaultOptions = {
@@ -57,21 +57,21 @@
     /* ************************************************************************************** */
    //for tabType sweater & loader added
     document.addEventListener("DOMContentLoaded", function () {
-        filterProducts("citrus_instinct_scroller1_tab_type1");
+        filterProducts("citrusAdSEBPO_scroller1_tab_type1");
     });
     //for tabType sweater & loader added e 
     
     
     //for tab sweater & loader added
     document.addEventListener("DOMContentLoaded", function () {
-        filterProducts("citrus_instinct_scroller1_tab1");
+        filterProducts("citrusAdSEBPO_scroller1_tab1");
     });
 
 
     // for dog filter function
     function filterProducts(c) {
         var x, i;
-        x = document.getElementsByClassName("citrus_instinct__Product");
+        x = document.getElementsByClassName("citrusAdSEBPO__Product");
         if (c == "all") c = "";
         for (i = 0; i < x.length; i++) {
             RemoveClass(x[i], "citrusTabShow");
@@ -106,16 +106,15 @@
     // Add active class to the current button (highlight it)
     document.addEventListener("DOMContentLoaded", function () {
     // for dog active class filter
-        var dogBtnContainer = document.getElementById("citrus_instinctTabId");
-        var dogBtns = dogBtnContainer.getElementsByClassName("citrus_instinct__tab_item");
-        addActiveClass(dogBtns, "citrus_instinct__active_tab");
-        
+        var dogBtnContainer = document.getElementById("citrusAdSEBPOTabId");
+        var dogBtns = dogBtnContainer.getElementsByClassName("citrusAdSEBPO__tab_item");
+        addActiveClass(dogBtns, "citrusAdSEBPO__active_tab");        
     });
 
 // for dog active class filter
     // document.addEventListener("DOMContentLoaded", function () {
         
-    //     var activeTabCheck = document.getElementsByClassName('citrus_instinct__tab_item').id;
+    //     var activeTabCheck = document.getElementsByClassName('citrusAdSEBPO__tab_item').id;
 
     //     var dogTypeItemBtns = document.getElementById("dogItemBtn");
     //     var catTypeItemBtns = document.getElementById("catItemBtn");
@@ -137,7 +136,7 @@
     // function filterTypes(event, typeBtnName){
 
         
-    //     var activeTabCheck = document.getElementsByClassName('citrus_instinct__active_tab').id;
+    //     var activeTabCheck = document.getElementsByClassName('citrusAdSEBPO__active_tab').id;
 
     //     var dogTypeItemBtns = document.getElementById("dogItemBtn");
     //     var catTypeItemBtns = document.getElementById("catItemBtn");
@@ -233,9 +232,9 @@
     // // Add active class to the current button tab-Type (highlight it)
     document.addEventListener("DOMContentLoaded", function () {
         // for dog active class filter
-            var tabTypeBtnContainer = document.getElementById("citrus_instinctTabTypeId");
-            var tabTypeBtns = tabTypeBtnContainer.getElementsByClassName("citrus_instinct__tab_type_item");
-            addActiveClass(tabTypeBtns, "citrus_instinct__active_tab_type");
+            var tabTypeBtnContainer = document.getElementById("citrusAdSEBPOTabTypeId");
+            var tabTypeBtns = tabTypeBtnContainer.getElementsByClassName("citrusAdSEBPO__tab_type_item");
+            addActiveClass(tabTypeBtns, "citrusAdSEBPO__active_tab_type");
         });
         // function addActiveClass(element, activeClass) {
         //     for (var i = 0; i < element.length; i++) {
