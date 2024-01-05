@@ -177,10 +177,10 @@
                     <!-- tab button -->
                     <div class="citrusAdSEBPO__productCarousel-wrapper">
                         <div id="citrusAdSEBPOTabId" class="citrusAdSEBPOTabId">
-                            <button class="citrusAdSEBPO__tab_item tabtwolinks citrusAdSEBPO__active_tab" manual_cm_sp="sponsoredbrandpage:instinctrawpetfood:arangeofrawoptions:1:dog:tab" onclick="filterProducts('citrusAdSEBPO_scroller1_tab1'); typeFilter()" id="defaultOpenTabTwo">
+                            <button class="citrusAdSEBPO__tab_item tabtwolinks citrusAdSEBPO__active_tab" manual_cm_sp="sponsoredbrandpage:instinctrawpetfood:arangeofrawoptions:1:dog:tab" onclick="filterProducts('citrusAdSEBPO_scroller1_tab1'); filterType('typeBtnDog')" id="defaultOpenTabTwo">
                                 <img src="images/citrus_scienceDiet_tab-dog-icon.png" alt="Dog Icon">Dog
                             </button>
-                            <button class="citrusAdSEBPO__tab_item tabtwolinks" manual_cm_sp="sponsoredbrandpage:instinctrawpetfood:arangeofrawoptions:2:cat:tab" onclick="filterProducts('citrusAdSEBPO_scroller1_tab2'); filterType(event, 'typeBtnCat')">
+                            <button class="citrusAdSEBPO__tab_item tabtwolinks" manual_cm_sp="sponsoredbrandpage:instinctrawpetfood:arangeofrawoptions:2:cat:tab" onclick="filterProducts('citrusAdSEBPO_scroller1_tab2'); filterType('typeBtnCat')">
                                 <img src="images/citrus_scienceDiet_tab-cat-icon.png" alt="Cat Icon">Cat
                             </button>
                         </div>
@@ -188,26 +188,49 @@
                     <!-- End tab button -->
 
                     <!-- tab button tab-type -->
-                    <div class="citrusAdSEBPO__productCarousel-wrapper">
+
+                    <div class="citrusAdSEBPO__productCarousel-wrapper " >
                         <div id="citrusAdSEBPOTabTypeId" class="citrusAdSEBPOTabTypeId">
-                            <button id="typeBtnDog" class="citrusAdSEBPO__tab_type_item typeTwoBtn  dogItemBtn citrusAdSEBPO__active_tab_type" manual_cm_sp="sponsoredbrandpage:instinctrawpetfood:arangeofrawoptions:1:dog:tab" onclick="filterProducts('citrusAdSEBPO_scroller1_tab_type1')">
-                                <img src="refresh-assets/images/citrusAdSEBPO_dog-icon.png" alt="">Puppy
-                            </button>
-                            <button id="typeBtnCat" class="citrusAdSEBPO__tab_type_item typeTwoBtn  catItemBtn" manual_cm_sp="sponsoredbrandpage:instinctrawpetfood:arangeofrawoptions:2:cat:tab" onclick="filterProducts('citrusAdSEBPO_scroller1_tab_type2')">
-                                <img src="refresh-assets/images/citrusAdSEBPO_cat-icon.png" alt="">Adult 1–6 
-                            </button>
-                            <button id="typeBtnDog" class="citrusAdSEBPO__tab_type_item typeTwoBtn  dogItemBtn" manual_cm_sp="sponsoredbrandpage:instinctrawpetfood:arangeofrawoptions:2:cat:tab" onclick="filterProducts('citrusAdSEBPO_scroller1_tab_type3')">
-                                <img src="refresh-assets/images/citrusAdSEBPO_cat-icon.png" alt="">Adult 7+ 
-                            </button>
-                            <button id="typeBtnDog" class="citrusAdSEBPO__tab_type_item typeTwoBtn  dogItemBtn" manual_cm_sp="sponsoredbrandpage:instinctrawpetfood:arangeofrawoptions:2:cat:tab" onclick="filterProducts('citrusAdSEBPO_scroller1_tab_type3')">
-                                <img src="refresh-assets/images/citrusAdSEBPO_cat-icon.png" alt="">Small Breed 
-                            </button>
-                            <button id="typeBtnDog" class="citrusAdSEBPO__tab_type_item typeTwoBtn  dogItemBtn" manual_cm_sp="sponsoredbrandpage:instinctrawpetfood:arangeofrawoptions:2:cat:tab" onclick="filterProducts('citrusAdSEBPO_scroller1_tab_type3')">
-                                <img src="refresh-assets/images/citrusAdSEBPO_cat-icon.png" alt="">Weight Management 
-                            </button>
-                            <button id="typeBtnDog" class="citrusAdSEBPO__tab_type_item typeTwoBtn  dogItemBtn" manual_cm_sp="sponsoredbrandpage:instinctrawpetfood:arangeofrawoptions:2:cat:tab" onclick="filterProducts('citrusAdSEBPO_scroller1_tab_type3')">
-                                <img src="refresh-assets/images/citrusAdSEBPO_cat-icon.png" alt="">Digestion and Skin Sensitivity 
-                            </button>
+                            <div class="typeTwoBtn" id="typeBtnDog">
+                                <button class="citrusAdSEBPO__tab_type_item dogItemBtn citrusAdSEBPO__active_tab_type" manual_cm_sp="sponsoredbrandpage:instinctrawpetfood:arangeofrawoptions:1:dog:tab" onclick="filterProducts('citrusAdSEBPO_scroller1_tab_type1')">
+                                    <img src="refresh-assets/images/citrusAdSEBPO_dog-icon.png" alt="">Puppy
+                                </button>
+                                <button class="citrusAdSEBPO__tab_type_item dogItemBtn" manual_cm_sp="sponsoredbrandpage:instinctrawpetfood:arangeofrawoptions:2:cat:tab" onclick="filterProducts('citrusAdSEBPO_scroller1_tab_type2')">
+                                    <img src="refresh-assets/images/citrusAdSEBPO_cat-icon.png" alt="">Adult 1–6 
+                                </button>
+                                <button class="citrusAdSEBPO__tab_type_item dogItemBtn" manual_cm_sp="sponsoredbrandpage:instinctrawpetfood:arangeofrawoptions:2:cat:tab" onclick="filterProducts('citrusAdSEBPO_scroller1_tab_type3')">
+                                    <img src="refresh-assets/images/citrusAdSEBPO_cat-icon.png" alt="">Adult 7+ 
+                                </button>
+                                <button class="citrusAdSEBPO__tab_type_item dogItemBtn" manual_cm_sp="sponsoredbrandpage:instinctrawpetfood:arangeofrawoptions:2:cat:tab" onclick="filterProducts('citrusAdSEBPO_scroller1_tab_type4')">
+                                    <img src="refresh-assets/images/citrusAdSEBPO_cat-icon.png" alt="">Small Breed 
+                                </button>
+                                <button class="citrusAdSEBPO__tab_type_item dogItemBtn" manual_cm_sp="sponsoredbrandpage:instinctrawpetfood:arangeofrawoptions:2:cat:tab" onclick="filterProducts('citrusAdSEBPO_scroller1_tab_type5')">
+                                    <img src="refresh-assets/images/citrusAdSEBPO_cat-icon.png" alt="">Weight Management 
+                                </button>
+                                <button class="citrusAdSEBPO__tab_type_item dogItemBtn" manual_cm_sp="sponsoredbrandpage:instinctrawpetfood:arangeofrawoptions:2:cat:tab" onclick="filterProducts('citrusAdSEBPO_scroller1_tab_type6')">
+                                    <img src="refresh-assets/images/citrusAdSEBPO_cat-icon.png" alt="">Digestion and Skin Sensitivity 
+                                </button>                                
+                            </div>
+                            <div class="typeTwoBtn" id="typeBtnCat" >
+                                <button  class="citrusAdSEBPO__tab_type_item catItemBtn" manual_cm_sp="sponsoredbrandpage:instinctrawpetfood:arangeofrawoptions:1:dog:tab" onclick="filterProducts('citrusAdSEBPO_scroller1_tab_type7')">
+                                    <img src="refresh-assets/images/citrusAdSEBPO_dog-icon.png" alt="">Kitten
+                                </button>
+                                <button class="citrusAdSEBPO__tab_type_item catItemBtn" manual_cm_sp="sponsoredbrandpage:instinctrawpetfood:arangeofrawoptions:2:cat:tab" onclick="filterProducts('citrusAdSEBPO_scroller1_tab_type8')">
+                                    <img src="refresh-assets/images/citrusAdSEBPO_cat-icon.png" alt="">Adult 1–6 
+                                </button>
+                                <button class="citrusAdSEBPO__tab_type_item catItemBtn" manual_cm_sp="sponsoredbrandpage:instinctrawpetfood:arangeofrawoptions:2:cat:tab" onclick="filterProducts('citrusAdSEBPO_scroller1_tab_type9')">
+                                    <img src="refresh-assets/images/citrusAdSEBPO_cat-icon.png" alt="">Adult 7+ 
+                                </button>
+                                <button class="citrusAdSEBPO__tab_type_item catItemBtn" manual_cm_sp="sponsoredbrandpage:instinctrawpetfood:arangeofrawoptions:2:cat:tab" onclick="filterProducts('citrusAdSEBPO_scroller1_tab_type10')">
+                                    <img src="refresh-assets/images/citrusAdSEBPO_cat-icon.png" alt="">Urinary and Hairball Control 
+                                </button>
+                                <button class="citrusAdSEBPO__tab_type_item catItemBtn" manual_cm_sp="sponsoredbrandpage:instinctrawpetfood:arangeofrawoptions:2:cat:tab" onclick="filterProducts('citrusAdSEBPO_scroller1_tab_type11')">
+                                    <img src="refresh-assets/images/citrusAdSEBPO_cat-icon.png" alt="">Digestion and Skin Sensitivity 
+                                </button>
+                                <button class="citrusAdSEBPO__tab_type_item catItemBtn" manual_cm_sp="sponsoredbrandpage:instinctrawpetfood:arangeofrawoptions:2:cat:tab" onclick="filterProducts('citrusAdSEBPO_scroller1_tab_type12')">
+                                    <img src="refresh-assets/images/citrusAdSEBPO_cat-icon.png" alt="">Weight Management 
+                                </button>                                
+                            </div>
                         </div>
                     </div>
                     <!-- End tab button tab-type -->
@@ -215,7 +238,7 @@
                     <div class="citrusAdSEBPO-section__tab-content">
                         <!-- Dog row 01 -->
                         <div id="citrusAdSEBPO_scroller1_tab1" class="splide citrusAdSEBPO__Products splide--slide splide--ltr splide--draggable is-active is-initialized" role="region" aria-roledescription="carousel">
-                            <div class="splide__arrows splide__arrows--ltr"><button class="splide__arrow splide__arrow--prev" type="button" disabled="" aria-label="Previous slide" aria-controls="citrusAdSEBPO_scroller1_tab1-track"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path></svg></button><button class="splide__arrow splide__arrow--next" type="button" disabled="" aria-label="Next slide" aria-controls="citrusAdSEBPO_scroller1_tab1-track"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path></svg></button></div><div class="splide__track splide__track--slide splide__track--ltr splide__track--draggable" id="citrusAdSEBPO_scroller1_tab1-track" style="padding-left: 0px; padding-right: 0px;" aria-live="polite" aria-atomic="true">
+                            <div class="splide__arrows splide__arrows--ltr"><button class="splide__arrow splide__arrow--prev" type="button" disabled="" aria-label="Previous slide" aria-controls="citrusAdSEBPO_scroller1_tab1-track"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path></svg></button><button class="splide__arrow splide__arrow--next" type="button" disabled="" aria-label="Next slide" aria-controls="citrusAdSEBPO_scroller1_tab1-track"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path></svg></button></div><div class="splide__track splide__track--slide splide__track--ltr splide__track--draggable" id="citrusAdSEBPO_scroller1_tab1-track" style="padding-left: 15px; padding-right: 0px;" aria-live="polite" aria-atomic="true">
                                 <div class="splide__list" id="citrusAdSEBPO_scroller1_tab1-list" role="presentation" style="transform: translateX(0px);">
                                     
                                     <!-- tab item 01-->
@@ -389,7 +412,7 @@
                                     <!-- tab item -->
 
                                     <!-- tab item 02-->
-                                    <div class="citrusAdSEBPO__Product citrusAdSEBPO_scroller1_tab2 splide__slide">
+                                    <div class="citrusAdSEBPO__Product citrusAdSEBPO_scroller1_tab2 citrusAdSEBPO_scroller1_tab_type7 splide__slide">
                                         <div class="citrusAdSEBPO-tab-card">
                                             <a href="https://www.petco.com/shop/en/petcostore/brand/instinct/cat/cat-food/freeze-dried-cat-food" manual_cm_sp="sponsoredbrandpage:instinctrawpetfood:cat:2:freezedriedrawmeals:shopnow" onclick="clickTrackLink(this);">
                                                 <div class="citrusAdSEBPO-tab-cardImg">
@@ -421,7 +444,7 @@
                                     <!-- tab item -->
 
                                     <!-- tab item 04-->
-                                    <div class="citrusAdSEBPO__Product citrusAdSEBPO_scroller1_tab2 splide__slide">
+                                    <div class="citrusAdSEBPO__Product citrusAdSEBPO_scroller1_tab2 citrusAdSEBPO_scroller1_tab_type7 splide__slide">
                                         <div class="citrusAdSEBPO-tab-card">
                                             <a href="https://www.petco.com/shop/en/petcostore/brand/instinct/cat/cat-food/cat-broths-and-food-toppers" manual_cm_sp="sponsoredbrandpage:instinctrawpetfood:cat:4:rawtoppers:shopnow" onclick="clickTrackLink(this);">
                                                 <div class="citrusAdSEBPO-tab-cardImg">
@@ -437,7 +460,7 @@
                                     <!-- tab item -->
 
                                     <!-- tab item 05-->
-                                    <div class="citrusAdSEBPO__Product citrusAdSEBPO_scroller1_tab2 splide__slide">
+                                    <div class="citrusAdSEBPO__Product citrusAdSEBPO_scroller1_tab2 citrusAdSEBPO_scroller1_tab_type9 splide__slide">
                                         <div class="citrusAdSEBPO-tab-card">
                                             <a href="https://www.petco.com/shop/en/petcostore/brand/instinct/cat/cat-food/wet-cat-food" manual_cm_sp="sponsoredbrandpage:instinctrawpetfood:cat:5:wet:shopnow" onclick="clickTrackLink(this);">
                                                 <div class="citrusAdSEBPO-tab-cardImg">
@@ -453,7 +476,7 @@
                                     <!-- tab item -->
 
                                     <!-- tab item 06-->
-                                    <div class="citrusAdSEBPO__Product citrusAdSEBPO_scroller1_tab2 splide__slide">
+                                    <div class="citrusAdSEBPO__Product citrusAdSEBPO_scroller1_tab2 citrusAdSEBPO_scroller1_tab_type8 splide__slide">
                                         <div class="citrusAdSEBPO-tab-card">
                                             <a href="https://www.petco.com/shop/en/petcostore/brand/instinct/cat/cat-food/wet-cat-food" manual_cm_sp="" onclick="clickTrackLink(this);">
                                                 <div class="citrusAdSEBPO-tab-cardImg">
@@ -541,11 +564,9 @@
                         </div>
                     </div>
                     <div class="citrusAdSEBPO__faq_cta citrusAdSEBPO__commonCTA">                        
-                        <a href="" manual_cm_sp="" onclick="clickTrackLink(this);">
-                                <button>Shop Dog</button>
+                        <a href="" manual_cm_sp="" onclick="clickTrackLink(this);"><button>Shop Dog</button>
                         </a>    
-                        <a href="" manual_cm_sp="" onclick="clickTrackLink(this);">
-                            <button>Shop Cat</button>
+                        <a href="" manual_cm_sp="" onclick="clickTrackLink(this);"><button>Shop Cat</button>
                         </a>                     
                     </div>
                 </div>                

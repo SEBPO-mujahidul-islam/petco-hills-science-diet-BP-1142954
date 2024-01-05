@@ -155,12 +155,28 @@
     //         }
     // }
 
-    function filterTypes(event, tabName) {
+    function filterType(mainTabName) {
         //first hide all cats(2nd btn elements)
         var i, typeTwoBtn, tabtwolinks;
         typeTwoBtn = document.getElementsByClassName("typeTwoBtn");
         for (i = 0; i < typeTwoBtn.length; i++) {
             typeTwoBtn[i].style.display = "none";
+        }
+
+        // Show the specific tab content
+        document.getElementById(mainTabName).style.display = "block";
+
+        var dogTypeItemBtns = document.getElementsByClassName("dogItemBtn");
+        var catTypeItemBtns = document.getElementsByClassName("catItemBtn");
+
+        if (mainTabName === "typeBtnDog") {         
+            // addActiveClass(dogTypeItemBtns, "dogItemBtn_active");    
+            dogTypeItemBtns.style.display = "block";
+            // filterDogProducts("citrusHills-puppy_Dog-product");
+        } else {
+            // addActiveClass(catTypeItemBtns, "catItemBtn_active");
+            catTypeItemBtns.style.display = "block";
+            // filterProducts("citrusHills-kitten_Cat-product");
         }
 
         //   tabtwolinks = document.getElementById(tabName);
@@ -207,11 +223,7 @@
       }
       
       // Get the element with id="defaultOpen" and click on it
-    //   document.getElementById("defaultOpenTabTwo").click();
-
-      function typeFilter(){
-        
-      }
+      document.getElementById("defaultOpenTabTwo").click();
 
 
       function addActiveClass(element, activeClass) {
